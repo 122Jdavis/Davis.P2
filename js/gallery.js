@@ -64,7 +64,9 @@ mRequest.send();
 
 // Array holding GalleryImage objects (see below).
 var mImages = [];
-
+var Location;
+var Description;
+var Date; 
 // Holds the retrived JSON information
 var mJson;
 
