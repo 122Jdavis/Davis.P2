@@ -40,6 +40,8 @@ function swapPhoto() {
 
 
 	//Access the img element and replace its source
+document.getElementById('photo').src=mImages[mCurrentIndex].imgPath;
+
 	//with a new image from your images array which is loaded
 	//from the JSON string
 	console.log('swap photo');
@@ -66,7 +68,7 @@ mRequest.send();
 var mImages = [];
 var Location;
 var Description;
-var Date; 
+var Date;
 // Holds the retrived JSON information
 var mJson;
 
