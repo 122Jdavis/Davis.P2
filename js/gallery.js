@@ -35,10 +35,11 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
   var image = getElementById(photo);
-if (mCurrentIndex >= mImages) {
+if (mCurrentIndex >= mImages.length) {
   mCurrentIndex = 0;
-} else {
-
+}
+if (mCurrentIndex < 0){
+  mCurrentIndex= mImages [mImages.length-1]
 }
 
 	//Access the img element and replace its source
@@ -129,7 +130,7 @@ function iterateJSON(mJson)
 {
   for (let x = 0; x < mJson.images.length; x++)
 {
-  mImages[x] = new 
+  mImages[x] = new
 
 
 
