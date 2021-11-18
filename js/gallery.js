@@ -38,7 +38,7 @@ function swapPhoto() {
 if (mCurrentIndex >= mImages) {
   mCurrentIndex = 0;
 } else {
-    
+
 }
 
 	//Access the img element and replace its source
@@ -112,4 +112,31 @@ function GalleryImage() {
 	//2. description of photo
 	//3. the date when the photo was taken
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+}
+
+
+
+
+//Part 2.4, not sure if its right
+
+
+
+
+
+
+
+function iterateJSON(mJson)
+{
+  for (let x = 0; x < mJson.images.length; x++)
+{
+  mImages[x] = new 
+
+
+
+
+
+
+}
+
+
 }
