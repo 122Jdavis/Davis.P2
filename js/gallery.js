@@ -41,7 +41,8 @@ if (mCurrentIndex >= mImages.length) {
 if (mCurrentIndex < 0){
   mCurrentIndex= mImages [mImages.length-1]
 }
-
+var mLastFrameTime = 0
+mCurrentIndex +=1
 	//Access the img element and replace its source
 document.getElementById('photo').src=mImages[mCurrentIndex].imgPath;
 document.getElementsByClassName('location').innerHTML = "Location:" + mImages[mCurrentIndex].location
