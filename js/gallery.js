@@ -34,8 +34,12 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
-  var something = getElementById(photo);
-
+  var image = getElementById(photo);
+if (mCurrentIndex >= mImages) {
+  mCurrentIndex = 0;
+} else {
+    
+}
 
 	//Access the img element and replace its source
 document.getElementById('photo').src=mImages[mCurrentIndex].imgPath;
